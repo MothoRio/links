@@ -1,0 +1,21 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); /* 12等分 */
+    gap: 10px;
+    padding: 10px;
+}
+
+.col {
+    background: #3498db;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.col-3 {
+    grid-column: span 3;
+}
+
+.col-6 {
+    grid-column: span 6;
+}
