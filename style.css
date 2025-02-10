@@ -1,14 +1,24 @@
+body {
+    font-size: 16px;
+    line-height: 1.6em;
+}
+
+h1 {
+    font-size: 32px; /* PC向けの基本サイズ */
+    line-height: 1.2em;
+}
+
 @media screen and (max-width: 768px) {
-    body {
-        font-size: 14px; /* スマホ向けの文字サイズ */
+    h1 {
+        font-size: 24px; /* スマホ向けの文字サイズ */
     }
 }
 
 .grid-container {
     display: grid;
     grid-template-columns: repeat(12, 1fr); /* 12等分 */
-    gap: 10px;
-    padding: 10px;
+    gap: 16px;
+    padding: 16px;
 }
 
 .col {
