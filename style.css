@@ -1,3 +1,9 @@
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px; /* スマホ向けの文字サイズ */
+    }
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: repeat(12, 1fr); /* 12等分 */
@@ -8,7 +14,7 @@
 .col {
     background: #3498db;
     color: white;
-    padding: 20px;
+    padding: 16px;
     text-align: center;
     white-space: pre-line;
 }
