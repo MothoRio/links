@@ -4,13 +4,17 @@ body {
     max-width: 1440px;
     min-width: 384px;
 }
-
+.body-head {
+    background-color: #fcfcfc;
+}
+.body-main {
+    margin: 0 auto;
+    background-color: #ececec;
+}
 h1 {
     font-size: 32px; /* PC向けの基本サイズ */
     line-height: 1.2em;
 }
-
-
 
 .grid-container {
     display: grid;
@@ -18,7 +22,6 @@ h1 {
     gap: 16px;
     padding: 16px;
 }
-
 
 .col {
     background: #3498db;
@@ -43,6 +46,7 @@ h1 {
 .col-12 {
     grid-column: span 12;
 }
+
 @media screen and (max-width: 768px) {
     h1 {
         font-size: 24px; /* スマホ向けの文字サイズ */
@@ -55,4 +59,56 @@ h1 {
     .col {
         grid-column: span 2;
     }
+}
+
+/* チェックボックスを非表示 */
+#menu-toggle {
+    display: none;
+}
+
+/* ハンバーガーアイコン */
+.hamburger {
+    font-size: 30px;
+    cursor: pointer;
+    display: block;
+    width: 40px;
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: white;
+    border-radius: 5px;
+}
+
+/* メニューのデフォルト状態（非表示） */
+.menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background: #333;
+    width: 200px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* メニューのスタイル */
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    padding: 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+/* チェックが入るとメニューを表示 */
+#menu-toggle:checked + .hamburger + .menu {
+    display: block;
 }
