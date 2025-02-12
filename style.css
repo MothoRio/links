@@ -11,7 +11,7 @@ body {
     font-size: 32px;
     user-select: none;
 }
-.body-head>div {
+.body-head * {
     margin-right: 8px;
 }
 .body-main {
