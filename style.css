@@ -6,6 +6,7 @@ body {
     background-color: #fcfcfc;
 }
 .body-head {
+    display: flex;
     background-color: #fcfcfc;
     padding-bottom: 8px;
 }
@@ -76,8 +77,8 @@ h1 {
     width: 36px;
     text-align: center;
     padding: 12px;
-    background: #202020;
-    color: white;
+    background: #fcfcfc;
+    color: #101010;
     border-radius: 5px;
 }
 
