@@ -3,9 +3,11 @@ body {
     line-height: 1.6em;
     max-width: 1440px;
     min-width: 384px;
+    background-color: #fcfcfc;
 }
 .body-head {
     background-color: #fcfcfc;
+    padding-bottom: 8px;
 }
 .body-main {
     margin: 0 auto;
@@ -71,10 +73,10 @@ h1 {
     font-size: 30px;
     cursor: pointer;
     display: block;
-    width: 40px;
+    width: 36px;
     text-align: center;
-    padding: 10px;
-    background: #333;
+    padding: 12px;
+    background: #202020;
     color: white;
     border-radius: 5px;
 }
