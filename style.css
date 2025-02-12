@@ -7,7 +7,6 @@ body {
 .body-head {
     display: flex;
     background-color: #fcfcfc;
-    padding: 8px;
     font-size: 32px;
     user-select: none;
 }
@@ -78,9 +77,8 @@ h1 {
 .hamburger {
     cursor: pointer;
     width: 32px;
+    font-size: 32px;
     text-align: center;
-    background: #fcfcfc;
-    color: #101010;
 }
 
 /* メニューのデフォルト状態（非表示） */
@@ -93,6 +91,13 @@ h1 {
     width: 160px;
     padding: 8px;
     font-size: 16px;
+    height: 100vh;
+}
+.menu * {
+    display: block;
+    padding: 8px;
+    color: #fcfcfc;
+    background-color: #202020;
 }
 
 /* メニューのスタイル */
