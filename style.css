@@ -87,11 +87,11 @@ h1 {
 .menu {
     display: none;
     position: absolute;
-    top: 60px;
+    top: 0;
     left: 0;
     background: #202020;
     width: 160px;
-    padding: 10px;
+    padding: 8px;
     font-size: 16px;
 }
 
@@ -103,7 +103,7 @@ h1 {
 }
 
 .menu li {
-    padding: 10px;
+    padding: 8px;
 }
 
 .menu a {
