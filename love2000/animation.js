@@ -10,20 +10,30 @@ const buttonElement = document.getElementById("restart");
 
 
 function changeText() {
-    if (index < lyrics.length) {
-      textElement.style.opacity = 0; // フェードアウト
-      setTimeout(() => {
-        textElement.textContent = lyrics[index];
-        textElement.style.opacity = 1; // フェードイン
-        index++;
-        setTimeout(changeText, 4640); // 次のテキストを表示
-      }, 1000); // 1秒後にテキストを変更
-    }
+  if (index >= lyrics.length) {
+      isRunning = false; // すべての歌詞を表示し終わったら実行を停止
+      return;
   }
+
+  textElement.style.opacity = 0; // フェードアウト
+  setTimeout(() => {
+      textElement.textContent = lyrics[index];
+      textElement.style.opacity = 1; // フェードイン
+      index++;
+      timerId = setTimeout(changeText, 4640); // 次の歌詞へ
+  }, 1000);
+}
+
+function restartLyrics() {
+  if (isRunning) {
+      clearTimeout(timerId);  // 既存の処理をクリア
+  }
+
+  index = 0;
+  isRunning = true;  // 実行中フラグをセット
+  changeText();  // 再スタート
+}
 
 changeText(); // 初回実行
 
-buttonElement.addEventListener("click", () => {
-  index = 0;
-  changeText();
-});
+buttonElement.addEventListener("click", restartLyrics);
