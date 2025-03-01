@@ -8,7 +8,7 @@ let index = 0;
 const textElement = document.getElementById("lyrics");
 
 function changeText() {
-    if (index < texts.length) {
+    if (index < lyrics.length) {
       textElement.style.opacity = 0; // フェードアウト
       setTimeout(() => {
         textElement.textContent = lyrics[index];
