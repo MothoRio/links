@@ -1,0 +1,9 @@
+@keyframes changeText {
+    0%, 100% { content: "初期のテキスト"; }
+    50% { content: "変更後のテキスト"; }
+  }
+
+  .text span::after {
+    content: "初期のテキスト";
+    animation: changeText 6s infinite; /* 6秒ごとに変更 */
+  }
