@@ -23,4 +23,7 @@ function changeText() {
 
 changeText(); // 初回実行
 
-buttonElement.addEventListener("click", changeText())
+buttonElement.addEventListener("click", () => {
+  index = 0;
+  changeText();
+});
