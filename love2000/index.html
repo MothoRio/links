@@ -16,24 +16,23 @@
         </style>
 
         <script>
-        const texts = [
-            "こんにちは！", "お元気ですか？", "今日はいい天気ですね。",
-            "楽しい一日を！", "プログラミングは面白い！", "目標を持とう！",
-            "休憩も大事です。", "新しいことに挑戦しよう！", "笑顔を忘れずに！",
-            "また会いましょう！"
-        ];
+            const texts = [
+                "愛はどこからやってくるのでしょう", "自分の胸に問いかけた", "食べてみなくちゃ分からない事",
+                "出会いの引力はどれほどか", "愛はどこからやってくるのでしょう", "自分の胸に問いかけた",
+                "ニセモノなんか興味はないワ", "ホンモノだけ見つけたい", "あなたをずっと探してた",
+            ];
 
-        let index = 0;
-        const textElement = document.getElementById("text");
+            let index = 0;
+            const textElement = document.getElementById("text");
 
-        setInterval(() => {
-            textElement.style.opacity = 0; // フェードアウト
-            setTimeout(() => {
-            textElement.textContent = texts[index]; // テキスト変更
-            textElement.style.opacity = 1; // フェードイン
-            index = (index + 1) % texts.length;
-            }, 1000); // 1秒後に変更
-        }, 3000);
+            setInterval(() => {
+                textElement.style.opacity = 0; // フェードアウト
+                setTimeout(() => {
+                textElement.textContent = texts[index]; // テキスト変更
+                textElement.style.opacity = 1; // フェードイン
+                index = (index + 1) % texts.length;
+                }, 5700); // 1秒後に変更
+            }, 3000);
         </script>
     </body>
 </html>
