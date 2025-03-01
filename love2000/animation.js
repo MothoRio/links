@@ -6,6 +6,8 @@ const lyrics = [
 
 let index = 0;
 const textElement = document.getElementById("lyrics");
+const buttonElement = document.getElementById("restart");
+
 
 function changeText() {
     if (index < lyrics.length) {
@@ -20,3 +22,5 @@ function changeText() {
   }
 
 changeText(); // 初回実行
+
+buttonElement.addEventListener("click", changeText())
