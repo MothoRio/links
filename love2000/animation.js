@@ -14,7 +14,7 @@ function changeText() {
         textElement.textContent = lyrics[index];
         textElement.style.opacity = 1; // フェードイン
         index++;
-        setTimeout(changeText, 4830); // 次のテキストを表示
+        setTimeout(changeText, 4320); // 次のテキストを表示
       }, 1000); // 1秒後にテキストを変更
     }
   }
