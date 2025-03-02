@@ -6,7 +6,7 @@ const lyrics = [
 
 let index = 0;
 let timerId = null;  // `setTimeout` のIDを管理
-let isRunning = false;  // 実行中かどうかのフラグ
+let isRunning = true;  // 実行中かどうかのフラグ
 const textElement = document.getElementById("lyrics");
 const buttonElement = document.getElementById("restart");
 
