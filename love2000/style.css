@@ -1,0 +1,23 @@
+.player-box {
+    height: 480px;
+    width: 720px;
+    background-color: skyblue;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+.lyrics {
+    position: absolute;
+    bottom: 30px;
+}
+.restart {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 30px;
+    width: 60px;
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+}

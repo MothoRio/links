@@ -1,0 +1,88 @@
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    margin: 0;
+    height: 100vh;
+    font-size: 16px;
+    line-height: 1.6em;
+    background-color: #fcfcfc;
+    min-width: 384px;
+    min-height: fit-content;
+    
+}
+header {
+    grid-row-start: 1;
+    display: flex;
+    padding: 8px;
+    background-color: #fcfcfc;
+    font-size: 32px;
+    user-select: none;
+}
+header * {
+    padding: 8px;
+}
+
+main {
+    margin: 0 auto;
+    background-color: #ececec;
+    max-width: 1440px;
+}
+
+/* チェックボックスを非表示 */
+#menu-toggle {
+    display: none;
+}
+
+/* ハンバーガーアイコン */
+.hamburger {
+    cursor: pointer;
+    width: 32px;
+    font-size: 32px;
+    text-align: center;
+}
+
+/* メニューのデフォルト状態（非表示） */
+.menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: #202020;
+    width: 160px;
+    padding: 8px;
+    font-size: 16px;
+    user-select: none;
+}
+.menu * {
+    display: block;
+    padding: 8px;
+    color: #fcfcfc;
+    background-color: #202020;
+}
+
+/* メニューのスタイル */
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu a {
+    text-decoration: none;
+}
+
+/* チェックが入るとメニューを表示 */
+#menu-toggle:checked + .hamburger + .menu {
+    display: block;
+}
+
+footer  {
+    text-align: center;
+    background-color: #404040;
+    grid-row-start: -1;
+    bottom: 0;
+    left: 0;
+    padding: 8px 1vw;
+    width: 98vw;
+}

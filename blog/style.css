@@ -1,0 +1,49 @@
+h1 {
+    font-size: 32px; /* PC向けの基本サイズ */
+    line-height: 1.2em;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); /* 12等分 */
+    gap: 16px;
+    padding: 16px;
+}
+
+.col {
+    background: #3498db;
+    color: white;
+    padding: 16px;
+    text-align: center;
+    white-space: pre-line;
+}
+
+.col-3 {
+    grid-column: span 3;
+}
+
+.col-4 {
+    grid-column: span 4;
+}
+
+.col-6 {
+    grid-column: span 6;
+}
+
+.col-12 {
+    grid-column: span 12;
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 24px; /* スマホ向けの文字サイズ */
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .col {
+        grid-column: span 2;
+    }
+}
